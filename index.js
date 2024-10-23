@@ -18,7 +18,7 @@ document.querySelector('#submitWorkout').addEventListener('click', displayWorkou
 // Function to add new fitness goals and remove completed ones
 const addNewGoal = () => {
     const goalInput = document.getElementById('#goalInput').value;
-    const goalList = document.querySelector('#goalList')
+    const goalList = document.querySelector('#goalList');
     const newGoal = document.createElement('li');
     newGoal.textContent = goalInput;
     appendChild(newGoal);
