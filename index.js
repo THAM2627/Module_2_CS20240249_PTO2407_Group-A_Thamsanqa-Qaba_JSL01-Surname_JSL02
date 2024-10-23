@@ -22,7 +22,7 @@ goalList.removeChild (removedGoal)
 // NOW LET'S DEBUG TO PREVENT DUPLICATE GOALS FROM BEING SUBMITTED 🚀
 
 const addNewGoal = () => {
-    const goalInput = document.getElementById('#goalInput').value;
+    const goalInput = document.querySelector('#goalInput').value;
     const goalList = document.querySelector('#goalList');
     const newGoal = document.createElement('li');
     newGoal.textContent = goalInput;
