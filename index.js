@@ -17,8 +17,8 @@ document.querySelector('#submitWorkout').addEventListener('click', displayWorkou
 // ⚠️⚠️⚠️ Lesson 3: Creating and Removing Elements ⚠️⚠️⚠️
 // Function to add new fitness goals and remove completed ones
 
-const removedGoal = document.querySelector('#completed-goal');
-goalList.removeChild (removedGoal)
+//const removedGoal = document.querySelector('#completed-goal');
+//goalList.removeChild (removedGoal)
 // NOW LET'S DEBUG TO PREVENT DUPLICATE GOALS FROM BEING SUBMITTED 🚀
 
 const addNewGoal = () => {
