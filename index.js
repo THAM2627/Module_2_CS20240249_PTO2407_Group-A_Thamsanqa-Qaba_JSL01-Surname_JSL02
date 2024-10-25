@@ -32,11 +32,7 @@ const addNewGoal = () => {
     });
     
 };
-let arr = ['#goalList']
-function removeDuplicates(arr){
-    return arr.filter((item,index)=> arr.indexOf(item)===index);
-}
-console.log(removeDuplicates(arr));
+
 //document.querySelectorAll('#addNewGoal').
 //const removedGoal = document.querySelector('#completed-goal');
 //goalList.removeChild (removedGoal)
@@ -57,6 +53,21 @@ console.log(removeDuplicates(arr));
 
 // Add event listener to the goal submit button
 document.querySelector('#submitGoal').addEventListener('click', addNewGoal);
+
+let arr = ['#goalList']
+(function () {
+    var goalList = document.querySelectorAll(".combo")[0];
+    function removedupeGs() {
+        var i,all = document.querySelectorAll('.combo');
+        for (i=0;i<all.length;i++)
+        {
+            if (all[i] !=original)
+            {
+                all[i].parentNode.removeChild(all[i])
+            }
+        }
+    }
+}());
 
 ///
 let waterIntake = 0;
