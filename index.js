@@ -32,7 +32,7 @@ const addNewGoal = () => {
     });
     
 };
-let arr = ['#goalInput']
+let arr = ['#goalList']
 function removeDuplicates(arr){
     return arr.filter((item,index)=> arr.indexOf(item)===index);
 }
