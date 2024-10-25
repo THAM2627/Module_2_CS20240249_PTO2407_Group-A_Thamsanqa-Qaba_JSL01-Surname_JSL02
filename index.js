@@ -54,20 +54,7 @@ const addNewGoal = () => {
 // Add event listener to the goal submit button
 document.querySelector('#submitGoal').addEventListener('click', addNewGoal);
 
-let arr = ['#goalList']
-(function () {
-    var goalList = document.querySelectorAll(".combo")[0];
-    function removedupeGs() {
-        var i,all = document.querySelectorAll('.combo');
-        for (i=0;i<all.length;i++)
-        {
-            if (all[i] !=original)
-            {
-                all[i].parentNode.removeChild(all[i])
-            }
-        }
-    }
-}());
+const noDups = [...new Set(...goalList,...goalList)];
 
 ///
 let waterIntake = 0;
