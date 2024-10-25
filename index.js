@@ -32,8 +32,12 @@ const addNewGoal = () => {
     });
     
 };
-
-
+let arr = ['#goalInput']
+function removeDuplicates(arr){
+    return arr.filter((item,index)=> arr.indexOf(item)===index);
+}
+console.log(removeDuplicates(arr));
+//document.querySelectorAll('#addNewGoal').
 //const removedGoal = document.querySelector('#completed-goal');
 //goalList.removeChild (removedGoal)
     // ⚠️ Hint 1: Check for duplicates
