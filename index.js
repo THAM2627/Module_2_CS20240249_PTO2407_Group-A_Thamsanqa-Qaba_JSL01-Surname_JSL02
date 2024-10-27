@@ -32,6 +32,7 @@ const addNewGoal = () => {
     });
     
 };
+    
 
 //document.querySelectorAll('#addNewGoal').
 //const removedGoal = document.querySelector('#completed-goal');
@@ -54,7 +55,12 @@ const addNewGoal = () => {
 // Add event listener to the goal submit button
 document.querySelector('#submitGoal').addEventListener('click', addNewGoal);
 
-const noDups = [...new Set(...goalList,...goalList)];
+document.querySelectorAll('#goalList').if (goalList===goalInput).return('It has been entered already')
+    addEventListener('click');
+
+function removeDuuplicates(goalList) {
+    return[...new Set(goalList)]
+}
 
 ///
 let waterIntake = 0;
