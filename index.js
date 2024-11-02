@@ -55,7 +55,8 @@ const addNewGoal = () => {
 // Add event listener to the goal submit button
 document.querySelector('#submitGoal').addEventListener('click', addNewGoal);
 
-document.querySelectorAll('#goalList').if (goalList===goalInput).return('It has been entered already')
+document.querySelectorAll('#goalList'); 
+if (goalList===goalInput).return('It has been entered already')
     addEventListener('click');
 
 function removeDuuplicates(goalList) {
